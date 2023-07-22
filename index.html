@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+       integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+
+      <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+
+<body id="firstid">
+  <div class="length">
+  <nav class="navbar navbar-expand-lg navbar-light  custom-navbar"  id="navbar" >
+    <div class="container-fluid" id="navbarlight" >
+      <a class="navbar-bran" id="resume-builder" href="#" style="color: rgb(244, 241, 246); margin-right: 40px; font-size: 1.5rem;"><img src="resume-shope.png" alt=""></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0" >
+          <li class="nav-item">
+            <a class="nav-link active"  aria-current="page" href="indext.html" style="font-weight: 700; color: white; font-size: 1.3rem; margin-right: 20px;">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link"  href="#" style="font-weight: 700; color: rgb(234, 227, 227); font-size: 1.3rem; " >About</a>
+          </li>
+          
+          
+        </ul>
+        
+      </div>
+    </div>
+  </nav>
+
+
+
+        
+     
+      <!--cv form-->
+        <div class="container" id="cv-form">
+         <h1 class="text-center  text-primary fs-500.custom-font-size .custom-font-size custom-font-size " id="top-Heanding">Make an outstanding resume for free in minutes.</h1>
+          </h1>
+         <p class="text-center peragrapgh">Showcase yourself and your achievements 
+          with an impressive resume made with the free online resume maker from Adobe Express.</p>
+          
+          <div class="row">
+            <div class="col-md-6">
+             <h1 class="my-6">Personal Information</h1>
+              
+             <div class="form-group mt-3 col-sm-8" style="font-weight: 500;">
+              <label for="nameField" >Name</label>
+              <input type="text" id="nameField" placeholder="Enter Your Name" class="form-control " style="font-weight: 500;">
+             </div>
+              
+             <div class="form-group mt-2 col-sm-8" style="font-weight: 500;">
+              <label for="contactField">Phone No</label>
+              <input type="text" id="contactField" placeholder="Enter Your Phone No" class="form-control" style="font-weight: 500;">
+             </div>
+
+             <div class="form-group mt-2 col-sm-8" style="font-weight: 500;">
+              <label for="emailField">Email</label>
+              <input type="text" id="emailField" placeholder="Enter Your Email" class="form-control" style="font-weight: 500;">
+             </div>
+
+             <div class="form-group mt-2 col-sm-8" style="font-weight: 500;">
+              <label for="addressField">Address</label>
+              <textarea type="text" id="addressField" placeholder="Enter Your Address" class="form-control" rows="5" style="font-weight: 500;"></textarea>
+             </div>
+              
+             <h3 class="text-secondary my-3 ">Importent Links</h3>
+             
+             <div class="form-group mt-2 col-sm-8" style="font-weight: 500;">
+              <label for="fbField">Facebook</label>
+              <input type="text" id="fbField" placeholder="Enter here" class="form-control" style="font-weight: 500;">
+             </div>
+             
+             <div class="form-group mt-2 col-sm-8" style="font-weight: 500;">
+              <label for="LinkdenField">Linkden</label>
+              <input type="text" id="LinkdenField" placeholder="Enter here" class="form-control" style="font-weight: 500;">
+             </div>
+             
+             <div class="form-group mt-2 col-sm-8" style="font-weight: 500;">
+              <label for="gitField">Git Hub</label>
+              <input type="text" id="gitField" placeholder="Enter here" class="form-control" style="font-weight: 500;">
+             </div>
+
+             <div class="form-group mt-2 col-sm-8" style="font-weight: 500;">
+              <label for="instraFild">Instragram</label>
+              <input type="text" id="instraFild" placeholder="Enter here" class="form-control" style="font-weight: 500;">
+             </div>
+
+             <div class="form-group mt-2 col-sm-8" style="font-weight: 500;">
+              <label for="otherFild">Other Links</label>
+              <input type="text" id="otherFild" placeholder="Enter here" class="form-control" style="font-weight: 500;">
+             </div>
+
+            </div>
+
+            <div class="col-md-6">
+               <h1 class="my-6 pl-3" id="pi">Professional Information</h1>
+
+               <div class="form-group mt-2 " style="font-weight: 500;">
+                <label for="">Objective</label>
+                <textarea type="text" id="objectivefild" placeholder="Enter here" class="form-control " rows="5" style="font-weight: 500;"></textarea>
+               </div>
+
+               <div class="form-group mt-2 " id="we" style="font-weight: 500;">
+                <label for="">Work Experience</label>
+                <textarea type="text" id="workfild" placeholder="Enter here" class="form-control wefield"  rows="3" style="font-weight: 500;"></textarea>
+                <div class="container text-center mt-3" id="weAddButton">
+                  <button onclick="addNewWEField()" class="btn btn-primary btn-sm">Add</button>
+                </div>
+               </div>
+
+               <div class="form-group mt-2 " id="aq" style="font-weight: 500;">
+                <label for="">Academic Qualification</label>
+                <textarea type="text" id="" placeholder="Enter Your 10th 12th Graduation Marks, (Persentage or Cgpa) and year" class="form-control  eqField"  style="font-weight: 500;"></textarea>
+                <div class="container text-center mt-3 " id="weAQButton">  
+                  <button onclick="addNeACEField()" class="btn btn-primary btn-sm">Add</button>
+                </div>
+               </div>
+
+               <div class="form-group mt-2 " id="pq" style="font-weight: 500;">
+                <label for="">Projects</label>
+                <textarea type="text" id="" placeholder="Enter Your Project Title And project summry" class="form-control pfield"  style="font-weight: 500;"></textarea>
+                <div class="container text-center mt-3" id="wepqButton">
+                  <button onclick="addNewpField()" class="btn btn-primary btn-sm">Add</button>
+                </div>
+               </div>
+
+               <div class="form-group mt-2 " id="IQ" style="font-weight: 500;">
+                <label for="">Internship</label>
+                <textarea type="text" id="" placeholder="Enter Your Internship Field and Work" class="form-control  IField"  style="font-weight: 500;"></textarea>
+                <div class="container text-center mt-3" id="weIButton">
+                  <button onclick="addNewIField()" class="btn btn-primary btn-sm">Add</button>
+                </div>
+               </div>
+              
+               
+
+            </div>
+
+            
+            <div class="container mt-3 mb-4 text-center">
+              <button onclick="genrateCV()" class="btn btn-primary btn-lg">Generate CV</button>
+             </div>
+            </div>
+          </div>
+
+        </div>
+        
+        <!--cv Template-->
+        <div class="container" id="cv-templete">
+          <div class="row" >
+            <div class="col-md-4 text-center background" id="project-tem">
+              <!--First Colume-->
+              <img src="difolt img.jpg" alt="" class="img-fluid myimg">
+              <div class="container">
+                <p id="nameT1">Shubham Joshi</p>
+                <p id="contactT">+919012376748</p>
+                <p id="emailT">sj8741050@gmail.com</p>
+                <p id="AddressT">Nagthat Kalsi Dehradun</p>
+                <hr>
+                <p><a id="fbt" href="#1">https://www.facebook.com</a></p>
+                <p><a id="linkT" href="#1">https://www.linkden.com</a></p>
+                <p><a id="gitT" href="#1">https://www.github.com</a></p>
+                <p><a id="instraT" href="#1">https://www.instagram.com</a></p>
+                <p><a id="otherT" href="#1">https://www.geeksforgeeks.com</a></p>
+              
+
+              </div>
+            </div>
+            <div class="col-md-8 " id="second-col">
+            <!--Second Colume-->
+              <h1 id="namet2" class="text-center name" style="font-weight: 800;">Shubham Joshi</h1>
+
+              <!--Objective card-->
+              <div class="card mt-4">
+                <div class="card-header " style="background-color: aqua;">
+                  <h3 >Objective</h3>
+                </div>
+                <div class="card-body">
+                  <p id="objectiveT">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     Suscipit, provident magni omnis distinctio repellat unde
+                      earum et libero molestias dignissimos repudiandae nihil
+                       dicta assumenda. Ullam, minima. Sunt, tempore labore? 
+                       Asperiores tempora beatae fugit ipsum.</p>
+                </div>
+              </div>
+
+              <!--work experiance-->
+              <div class="card mt-4">
+                <div class="card-header " style="background-color: aqua;">
+                  <h3 >Work Experience</h3>
+                </div>
+                <div class="card-body">
+                  <ul id="weT">
+                    <li>
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque, esse.
+                    </li>
+                  
+
+                  
+                    <li>
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque, esse.
+                    </li>
+                  
+
+                  
+                    <li>
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque, esse.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+
+              <!--Acadmic Qualification-->
+              <div class="card mt-4">
+                <div class="card-header " style="background-color: aqua;">
+                  <h3 >Academic Qualification</h3>
+                </div>
+                <div class="card-body">
+                  <ul id="AdT">
+                    <li>
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque, esse.
+                    </li>
+                  
+
+                  
+                    <li>
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque, esse.
+                    </li>
+                  
+
+                  
+                    <li>
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque, esse.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+ 
+               <!--Projects-->
+               <div class="card mt-4">
+                <div class="card-header " style="background-color: aqua;">
+                  <h3 >Projects</h3>
+                </div>
+                <div class="card-body">
+                  <ul id="pT">
+                    <li>
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque, esse.
+                    </li>
+                  
+
+                  
+                    <li>
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque, esse.
+                    </li>
+                  
+
+                  
+                    <li>
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque, esse.
+                    </li>
+                  </ul>
+                </div>
+              
+          </div>
+              
+              <!--InternShips-->
+              <div class="card mt-4">
+                <div class="card-header " style="background-color: aqua;">
+                  <h3 >Internship</h3>
+                </div>
+                <div class="card-body">
+                  <ul id="iT">
+                    <li>
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque, esse.
+                    </li>
+                  
+
+                  
+                    <li>
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque, esse.
+                    </li>
+                  
+
+                  
+                    <li>
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque, esse.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+                  
+                 
+                </div>
+              </div>
+              <div class="container mt-3 text-center">
+                <button onclick="printCV()" class="btn " style="background-color: aqua;">Print Resume</button>
+              </div>
+            </div>
+
+            
+                
+              
+          </div>
+        </div>
+      </div>
+      
+         <script src="script.js"></script>
+         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" 
+         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+          integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+         integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+</body>
+</html>
